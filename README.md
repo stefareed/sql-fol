@@ -8,7 +8,15 @@
     λ-abstraction    Sättigung (saturation of the Begriff)
 ```
 
-This library translates SQL `SELECT` statements into FOL formulae and back, then annotates the result using Frege's semantic vocabulary: *Begriff*, *Gegenstand*, *Sinn*, *Bedeutung*, *Sättigung*, *Merkmal*, *Umfang*. The correspondence is principled — Codd's relational model was grounded in predicate logic from the start — but the Fregean framing surfaces things that the standard database-theory account leaves implicit.
+This library translates SQL `SELECT` statements into FOL formulae and back, then annotates the result using Frege's semantic vocabulary: *Begriff*, *Gegenstand*, *Sinn*, *Bedeutung*, *Sättigung*, *Merkmal*, *Umfang*. 
+
+This project is the result of a meme I made when taking formal semantics years ago + reading about the history of SQL. 
+<img src="frege-against-the-machine.jpeg" width="300" height="auto">
+
+
+
+
+Codd's relational model was grounded in predicate logic from the start, but the Fregean framing surfaces things that the standard database-theory account leaves implicit.
 
 ---
 
