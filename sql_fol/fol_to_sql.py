@@ -71,7 +71,7 @@ class FOLtoSQL:
         fol = fol.strip()
 
         # 1. Extract λ projection prefix
-        proj_match = re.match(r"^λ([\w,*]+)\.\s*(.*)", fol, re.DOTALL)
+        proj_match = re.match(r"^λ([\w.,*]+)\.\s*(.*)", fol, re.DOTALL)
         if proj_match:
             proj_str = proj_match.group(1)
             body     = proj_match.group(2).strip()
@@ -109,7 +109,7 @@ class FOLtoSQL:
                 continue
 
             # Table predicate: UpperWord(var)
-            tbl_m = re.match(r"^([A-Z][A-Za-z_0-9]*)\((\w+)\)$", conj)
+            tbl_m = re.match(r"^([A-Za-z_][A-Za-z_0-9]*)\((\w+)\)$", conj)
             if tbl_m:
                 tables.append((tbl_m.group(1), tbl_m.group(2)))
                 continue
